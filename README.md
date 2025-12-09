@@ -12,11 +12,11 @@ https://pgm-2526-atwork-1.github.io/project-2-pgm-ignacemaes/
 
 ### Must-haves
 
-- [] import all assets in the correct folders
-- [] define basic HTML layout for pages
+- [ ] import all assets in the correct folders
+- [ ] define basic HTML layout for pages
 
 ### Nice-to-haves
 
-- [] create extra beer page (wildjo.html)
-- [] create contact page (contact.html)
-- [] create a pagination (per month) for kalender.html.
+- [ ] create extra beer page (wildjo.html)
+- [ ] create contact page (contact.html)
+- [ ] create a pagination (per month) for kalender.html.
