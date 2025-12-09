@@ -1,0 +1,46 @@
+:root {
+  /* Font family */
+  --font-primary: "Cabin", sans-serif;
+  --font-heading-1: "Bebas Neue", sans-serif;
+  --font-heading-2: "Hepta Slab", sans-serif;
+  --font-scripts: "Permanent Marker", sans-serif;
+
+  /* Font weight */
+  --font-weight-normal: 400;
+  --font-weight-bold: 700;
+
+  /* Font size */
+  --font-size-normal: 1rem;
+
+  --font-size-semi-small: 0.85rem;
+  --font-size-small: 0.7rem;
+
+  --font-size-semi-large: 1.5rem;
+  --font-size-large: 2rem;
+
+  --font-size-xl: 3rem;
+  --font-size-xxl: 4rem;
+  --font-size-xxxl: 10rem;
+
+  --font-size-giant: 35rem;
+
+  /* Colors */
+  --color-orange-primary: #e2231a;
+  --color-orange-border: #bf1f17;
+  --color-orange-dark: #9c1612;
+
+  --color-white-primary: #ffffff;
+  --color-white-primary: #f5f4f0;
+  --color-white-ivory: #ebe8dd;
+
+  --color-black-primary: #000000;
+  --color-black-transparent: #00000091;
+
+  /* Containers */
+  --container-width-large: 75rem;
+  --container-width-normal: 50rem;
+  --container-width-small: 30rem;
+
+  /* Margin */
+  --margin-container: 0 auto;
+}
