@@ -2,6 +2,21 @@
 
 ## Description
 
+Doorheen dit project moeten we de website van Brouwerij De Konick zo goed mogelijk namaken over een periode van 6 weken. Hierbij moeten we gebruik maken van HTML, CSS en JS. Met behulp van API's moeten we bepaalde data inladen in ons project.
+
 ## Github Pages
 
 https://pgm-2526-atwork-1.github.io/project-2-pgm-ignacemaes/
+
+## To do list
+
+### Must-haves
+
+- [] import all assets in the correct folders
+- [] define basic HTML layout for pages
+
+### Nice-to-haves
+
+- [] create extra beer page (wildjo.html)
+- [] create contact page (contact.html)
+- [] create a pagination (per month) for kalender.html.
