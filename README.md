@@ -12,8 +12,8 @@ https://pgm-2526-atwork-1.github.io/project-2-pgm-ignacemaes/
 
 ### Must-haves
 
-- [ ] import all assets in the correct folders
-- [ ] define basic HTML layout for pages
+- [ ] import all the necessary assets in the correct folders
+- [ ] create the header and footer layout
 
 ### Nice-to-haves
 
