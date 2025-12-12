@@ -22,8 +22,8 @@
       <div class="header-top">
         <p>Bezoek de brouwerij vandaag tot 18u - inkom voor 16u30 <a href="#">Tickets</a></p>
         <button class="toggle">
-          <p class="toggle__text">Menu</p>
-          <img class="toggle__icon" src="./static/images/Icons/Toggle.svg" />
+          <p>Menu</p>
+          <img src="./static/images/Icons/Toggle.svg" />
         </button>
       </div>
       <div class="header-nav">
@@ -46,7 +46,7 @@
             </li>
             <li>
               <a href="#">BIEREN</a>
-              <ul>
+              <ul class="list-child">
                 <li><a href="#">TRIPEL D’ANVERS</a></li>
                 <li><a href="#">BOLLEKE</a></li>
                 <li><a href="#">WILD JO</a></li>
@@ -55,7 +55,7 @@
             </li>
             <li>
               <a href="#">Ambachten</a>
-              <ul>
+              <ul class="list-child">
                 <li><a href="#">Smakelijke ambachten & Winkels</a></li>
                 <li><a href="#">Bars & Restaurants</a></li>
               </ul>
@@ -68,7 +68,117 @@
       </div>
     </header>
 
-    <footer></footer>
+    <footer>
+      <div class="footer-container">
+        <img src="./static/images/Icons/BottleCap.svg" alt="Flessen dop van de Koninck" />
+        <ul class="menu">
+          <li class="menu__item">
+            <h2>BELEEF</h2>
+            <p>ONZE INTERACTIEVE BROUWERIJTOUR</p>
+            <a href="#">Tickets & Info</a>
+          </li>
+          <li class="menu__item">
+            <h2>ontdek</h2>
+            <p>ONZE AMBACHTEN, BARS & RESTO’S</p>
+            <a href="#">INFO & OPENINGSUREN</a>
+          </li>
+          <li class="menu__item">
+            <h2>Boek</h2>
+            <p>Een van onze eventlocaties</p>
+            <a href="#">Offerte op maat</a>
+          </li>
+        </ul>
+        <ul class="address">
+          <li class="address__item">
+            <picture>
+              <img src="./static/images/Background/Map.png" alt="Een kaartje met het address van de brouwerij" />
+            </picture>
+          </li>
+          <li class="address__item">
+            <h3>STADSBROUWERIJ DE KONINCK</h3>
+            <p class="subtitle">Bezoek de brouwerij vandaag tot 18u (inkom voor 16u30)</p>
+            <p>Mechelsesteenweg 29 2018 Antwerpen +32 3 866 96 90</p>
+            <ul class="adress__cta">
+              <li><a href="#"></a></li>
+              <li><a href="#"></a></li>
+              <li><a href="#"></a></li>
+            </ul>
+          </li>
+        </ul>
+        <form class="form" action="#">
+          <label for="newsletter">Schrijf je in voor onze nieuwsbrief</label>
+          <input type="text" name="newsletter" id="newsletter" />
+          <button type="button">Inschrijven</button>
+        </form>
+        <ul class="pages">
+          <li>
+            <h2>STADSBROUWERIJ</h2>
+            <ul class="pages__links">
+              <li><a href="#">INTERACTIEVE TOUR</a></li>
+              <li><a href="#">EVENTS</a></li>
+              <li><a href="#">TASTINGS</a></li>
+              <li><a href="#">AMBACHTEN</a></li>
+              <li><a href="#">BARS & RESTAURANTS</a></li>
+              <li><a href="#">SHOP</a></li>
+            </ul>
+          </li>
+          <li>
+            <h2>STADSBROUWERIJ</h2>
+            <ul class="pages__links">
+              <li><a href="#">Triple d’anvers</a></li>
+              <li><a href="#">Bolleke</a></li>
+              <li><a href="#">wild jo</a></li>
+              <li><a href="#">Speciallekes</a></li>
+            </ul>
+          </li>
+          <li>
+            <h2>NIEUWS</h2>
+            <h2>CONTACT</h2>
+            <h2>BIEREN</h2>
+            <ul class="pages__links">
+              <li><a href="#">INTERACTIEVE TOUR</a></li>
+              <li><a href="#">EVENTS</a></li>
+              <li><a href="#">TASTINGS</a></li>
+              <li><a href="#">AMBACHTEN</a></li>
+              <li><a href="#">BARS & RESTAURANTS</a></li>
+              <li><a href="#">SHOP</a></li>
+            </ul>
+          </li>
+          <li>
+            <h2>SHOPS / BARS / RESTO’S</h2>
+            <ul class="pages__links">
+              <li><a href="#">De Koninck Bars</a></li>
+              <li><a href="#">De Koninck Shop</a></li>
+              <li><a href="#">Only Cheese</a></li>
+              <li><a href="#">The Butcher's Store</a></li>
+              <li><a href="#">The Bakery</a></li>
+              <li><a href="#">Jitsk Chocolates</a></li>
+              <li><a href="#">The Butcher’s Son</a></li>
+            </ul>
+            <ul class="pages__links">
+              <li><a href="#">Black Smoke</a></li>
+              <li><a href="#">Minestrone culinaire workshops</a></li>
+              <li><a href="#">VelodomE</a></li>
+              <li><a href="#">Brasserie De Pelgrim</a></li>
+              <li><a href="#">Afspanning De Hand</a></li>
+            </ul>
+          </li>
+        </ul>
+        <div class="copyright">
+          <p>Bier met liefde gebrouwen, drink je met verstand</p>
+          <ul class="copyright__menu">
+            <li>©2020 STADSBROUWERIJ DE KONINCK - info@dekoninck.be</li>
+            <li>
+              <ul class="socials">
+                <li><img src="./static/images/Icons/Socials/Facebook.svg" alt="Icoontje van facebook" /></li>
+                <li><img src="./static/images/Icons/Socials/Instagram.svg" alt="Icoontje van instagram" /></li>
+              </ul>
+            </li>
+            <li>PRIVACY POLICY - TERMS & CONDITIONS</li>
+          </ul>
+        </div>
+      </div>
+    </footer>
 
     <!-- Javascript -->
     <script src="./static/js/main.js"></script>
