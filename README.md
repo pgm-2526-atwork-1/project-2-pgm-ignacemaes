@@ -12,7 +12,7 @@ https://pgm-2526-atwork-1.github.io/project-2-pgm-ignacemaes/
 
 ### Must-haves
 
-- [ ] import all the necessary assets in the correct folders
+- [x] import all the necessary assets in the correct folders
 - [ ] create the header and footer layout
 
 ### Nice-to-haves
