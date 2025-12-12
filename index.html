@@ -19,14 +19,56 @@
   <body>
     <!-- Header -->
     <header>
-      <div class="header__top">
-        <p>Bezoek de brouwerij vandaag tot 18u - inkom voor 16u30 <a href="">Tickets</a></p>
-        <button class="header__toggle">
-          <p>Menu</p>
-          <img src="./static/images/Icons/Toggle.svg" />
+      <div class="header-top">
+        <p>Bezoek de brouwerij vandaag tot 18u - inkom voor 16u30 <a href="#">Tickets</a></p>
+        <button class="toggle">
+          <p class="toggle__text">Menu</p>
+          <img class="toggle__icon" src="./static/images/Icons/Toggle.svg" />
         </button>
       </div>
+      <div class="header-nav">
+        <div class="header-logo">
+          <a href="index.html">
+            <img src="./static/images/Logo/Logo.svg" alt="Logo van de website" />
+          </a>
+        </div>
+        <nav class="header-navigation">
+          <ul class="list-parent">
+            <li>
+              <a href="#">STADSBROUWERIJ</a>
+              <ul class="list-child">
+                <li><a href="#">INteractieve tour</a></li>
+                <li><a href="#">Tastings</a></li>
+                <li><a href="#">Nieuws</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">Tickets</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="#">BIEREN</a>
+              <ul>
+                <li><a href="#">TRIPEL D’ANVERS</a></li>
+                <li><a href="#">BOLLEKE</a></li>
+                <li><a href="#">WILD JO</a></li>
+                <li><a href="#">Speciallekes</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="#">Ambachten</a>
+              <ul>
+                <li><a href="#">Smakelijke ambachten & Winkels</a></li>
+                <li><a href="#">Bars & Restaurants</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="#">evenementen</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
     </header>
+
+    <footer></footer>
 
     <!-- Javascript -->
     <script src="./static/js/main.js"></script>

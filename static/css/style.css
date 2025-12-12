@@ -42,35 +42,23 @@
   --container-width-small: 32rem;
 
   /* Padding */
-  --padding-container: 0 1rem;
+  --padding-container: 0.5rem;
 
   /* Margin */
   --margin-container: 0 auto;
 }
 
-/* Header */
-.header__toggle {
-  display: flex;
-  align-items: center;
-  gap: 0.75rem;
-
-  padding: 0.75rem 0.5rem;
-
-  background-color: var(--color-white-primary);
-  border: none;
+/* Body */
+body {
+  font-family: var(--font-primary);
 }
 
-.header__toggle p {
-  color: var(--color-black-primary);
-  font-family: var(--font-heading-1);
-  font-size: var(--font-size-normal);
-  font-weight: var(--font-weight-normal);
-  text-transform: uppercase;
-  line-height: normal;
+ul {
+  list-style-type: none;
+  padding: 0;
 }
 
-.header__toggle img {
-  width: 1.7rem;
-  height: 1rem;
-  flex-shrink: 0;
+a {
+  text-decoration: none;
+  color: inherit;
 }
