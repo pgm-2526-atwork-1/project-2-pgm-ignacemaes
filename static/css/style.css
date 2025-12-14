@@ -117,7 +117,7 @@ footer {
   flex-direction: column;
   gap: 0.5rem;
 
-  border-bottom: 1px solid var(--color-black-primary);
+  border-bottom: 2px solid var(--color-black-primary);
 }
 
 .menu__heading {
@@ -230,7 +230,7 @@ footer {
 
   gap: 1rem;
 
-  border-top: 1px solid var(--color-black-primary);
+  border-top: 2px solid var(--color-black-primary);
 }
 
 .form__input {
@@ -238,6 +238,7 @@ footer {
   max-width: 70rem;
   background-color: var(--color-orange-primary);
   border: 2px solid var(--color-orange-border);
+  color: var(--color-white-primary);
   padding: 0.5rem;
 }
 
@@ -265,17 +266,18 @@ footer {
 }
 
 .pages {
+  border-top: 2px solid var(--color-black-primary);
+
   display: flex;
   flex-direction: column;
 }
 
 .page {
-  border-top: 1px solid var(--color-black-primary);
-  padding: 2rem 1rem;
-  width: 100%;
-
   display: flex;
   flex-direction: column;
+
+  padding: 2rem 1rem;
+  border-bottom: 2px solid var(--color-black-primary);
 }
 
 .page__heading {
@@ -324,6 +326,7 @@ footer {
   font-size: var(--font-primary);
   font-weight: var(--font-weight-normal);
   text-transform: uppercase;
+  padding-top: 3rem;
 }
 
 .copyright__menu {
@@ -333,18 +336,27 @@ footer {
   align-items: center;
   gap: 1rem;
 
+  padding-top: 0.5rem;
+  border-top: 2px solid var(--color-black-primary);
   font-weight: var(--font-weight-bold);
 }
 
 .socials {
   display: flex;
-  gap: 2.5rem;
+  gap: 2rem;
 }
 
 @media (min-width: 64rem) {
   /* Footer */
   .menu {
     flex-direction: row;
+  }
+
+  .menu__item {
+    border-right: 2px solid var(--color-black-primary);
+    &:last-child {
+      border-right: none;
+    }
   }
 
   .address {
@@ -354,7 +366,7 @@ footer {
   }
 
   .address__img {
-    border-right: 1px solid var(--color-black-primary);
+    border-right: 2px solid var(--color-black-primary);
   }
 
   .adress__cta {
@@ -374,9 +386,24 @@ footer {
     flex-direction: row;
   }
 
+  .page {
+    padding: 2rem 4rem;
+    border-right: 2px solid var(--color-black-primary);
+    border-bottom: none;
+
+    &:last-child {
+      border-right: none;
+    }
+  }
+
   .page__collection {
     flex-direction: row;
-    gap: 1rem;
+    gap: 2rem;
+  }
+
+  .copyright {
+    padding-top: 3rem;
+    gap: 5rem;
   }
 
   .copyright__menu {
