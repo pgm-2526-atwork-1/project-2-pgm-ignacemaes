@@ -15,6 +15,8 @@ https://pgm-2526-atwork-1.github.io/project-2-pgm-ignacemaes/
 - [x] import all the necessary assets in the correct folders
 - [x] create the header and footer layout
 
+- [ ] create header logic
+
 ### Nice-to-haves
 
 - [ ] create extra beer page (wildjo.html)
