@@ -16,6 +16,7 @@ https://pgm-2526-atwork-1.github.io/project-2-pgm-ignacemaes/
 - [x] create the header and footer layout
 
 - [ ] create header logic
+- [ ] create hero layout with working background video.
 
 ### Nice-to-haves
 
