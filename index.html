@@ -19,53 +19,50 @@
   <body>
     <!-- Header -->
     <header>
-      <div class="header-top">
+      <div class="notifications">
         <p>Bezoek de brouwerij vandaag tot 18u - inkom voor 16u30 <a href="#">Tickets</a></p>
-        <button class="toggle">
-          <p>Menu</p>
-          <img src="./static/images/Icons/Toggle.svg" />
-        </button>
       </div>
-      <div class="header-nav">
-        <div class="header-logo">
-          <a href="index.html">
-            <img src="./static/images/Logo/Logo.svg" alt="Logo van de website" />
-          </a>
-        </div>
-        <nav class="header-navigation">
-          <ul class="list-parent">
-            <li>
-              <a href="#">STADSBROUWERIJ</a>
-              <ul class="list-child">
-                <li><a href="#">INteractieve tour</a></li>
-                <li><a href="#">Tastings</a></li>
-                <li><a href="#">Nieuws</a></li>
-                <li><a href="#">Contact</a></li>
-                <li><a href="#">Tickets</a></li>
-              </ul>
-            </li>
-            <li>
-              <a href="#">BIEREN</a>
-              <ul class="list-child">
-                <li><a href="#">TRIPEL D’ANVERS</a></li>
-                <li><a href="#">BOLLEKE</a></li>
-                <li><a href="#">WILD JO</a></li>
-                <li><a href="#">Speciallekes</a></li>
-              </ul>
-            </li>
-            <li>
-              <a href="#">Ambachten</a>
-              <ul class="list-child">
-                <li><a href="#">Smakelijke ambachten & Winkels</a></li>
-                <li><a href="#">Bars & Restaurants</a></li>
-              </ul>
-            </li>
-            <li>
-              <a href="#">evenementen</a>
-            </li>
-          </ul>
-        </nav>
-      </div>
+      <nav class="navigation">
+        <a class="logo" href="index.html">
+          <img src="./static/images/Logo/Logo.svg" alt="Logo" />
+        </a>
+        <ul class="primary">
+          <li>
+            <a class="primary__link" href="#">stadsbrouwerij</a>
+            <ul class="secondary">
+              <li><a href="#">Interactieve tour</a></li>
+              <li><a href="#">Tastings</a></li>
+              <li><a href="#">Nieuws</a></li>
+              <li><a href="#">Contact</a></li>
+              <li><a href="#">Tickets</a></li>
+            </ul>
+          </li>
+          <li>
+            <a class="primary__link" href="#">bieren</a>
+            <ul class="secondary">
+              <li><a href="#">Tripel d’Anvers</a></li>
+              <li><a href="#">Bolleke</a></li>
+              <li><a href="#">Wild Jo</a></li>
+              <li><a href="#">Speciallekes</a></li>
+            </ul>
+          </li>
+          <li>
+            <a class="primary__link" href="#">ambachten</a>
+            <ul class="secondary">
+              <li><a href="#">Smakelijke ambachten & Winkels</a></li>
+              <li><a href="#">Bars & Restaurants</a></li>
+            </ul>
+          </li>
+          <li>
+            <a class="primary__link" href="#">evenementen</a>
+            <ul class="secondary">
+              <li><a href="#">Kalender</a></li>
+              <li><a href="#">Privéfeesten</a></li>
+              <li><a href="#">Bedrijfsevents</a></li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
     </header>
 
     <!-- Main -->
@@ -95,14 +92,16 @@
         </ul>
 
         <div class="hero__tickets">
-          <p class="tickets__text"></p>
+          <p class="tickets__text">BESTEL JE TICKETS ONLINE</p>
           <img class="tickets__icon" src="./static/images/Icons/Tickets.svg" alt="Een handje dat een ticket vasthoudt." />
         </div>
 
-        <video class="hero__background" muted loop autoplay>
-          <source src="./static/videos/dekoninck.webm" type="video/webm" />
-          <source src="./static/videos/dekoninck.mp4" type="video/mp4" />
-        </video>
+        <div class="hero__background">
+          <video muted loop autoplay>
+            <source src="./static/videos/dekoninck.webm" type="video/webm" />
+            <source src="./static/videos/dekoninck.mp4" type="video/mp4" />
+          </video>
+        </div>
       </div>
     </main>
 
