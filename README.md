@@ -15,7 +15,7 @@ https://pgm-2526-atwork-1.github.io/project-2-pgm-ignacemaes/
 - [x] import all the necessary assets in the correct folders
 - [x] create the header and footer layout
 
-- [ ] create modal layout and add basic styling
+- [x] create modal layout and add basic styling
 - [ ] finish hero layout with working background video and basic styling.
 - [ ] create homepage layout with styling
 

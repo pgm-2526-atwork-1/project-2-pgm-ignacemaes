@@ -85,8 +85,8 @@ a {
 }
 
 .modal {
-  width: 45rem;
-  padding: 0 0.5rem;
+  width: var(--container-width-normal);
+  padding: 0 1rem;
 
   display: flex;
   flex-direction: column;
@@ -99,7 +99,7 @@ a {
   background-position: center;
 
   position: relative;
-  background-color: #e02318;
+  background-color: var(--color-orange-primary);
   height: 20rem;
 
   display: flex;
@@ -114,7 +114,7 @@ a {
 }
 
 .modal__logo path {
-  fill: white;
+  fill: var(--color-white-primary);
 }
 
 .modal__languages {
@@ -130,37 +130,39 @@ a {
 
 .languages__item {
   text-transform: uppercase;
-  color: #fff;
-  font-family: "Bebas Neue";
-  font-size: 1.125rem;
-  font-weight: 400;
+  color: var(--color-white-primary);
+  font-family: var(--font-heading-1);
+  font-size: var(--font-size-normal);
   padding-top: 0.5rem;
   position: relative;
+  font-weight: 400;
 }
 
 .languages__item--active::after {
   content: "";
-  background-color: white;
+  background-color: var(--color-white-primary);
   position: absolute;
-  top: 0;
   left: 0;
+  top: 0;
+
   width: 100%;
   height: 2px;
 }
 
 .modal__title {
-  color: #fff;
+  color: var(--color-white-primary);
+  font-weight: var(--font-weight-normal);
+  font-family: var(--font-heading-1);
+  font-size: var(--font-size-xxl);
   text-align: center;
-  font-family: "Bebas Neue";
-  max-width: 35rem;
-  font-size: 4rem;
-  font-weight: 400;
   line-height: 100%;
+  max-width: 35rem;
 }
 
 .modal__form {
-  background-color: white;
+  background-color: var(--color-white-primary);
   padding: 1rem;
+
   display: flex;
   justify-content: space-between;
   flex-direction: column;
@@ -174,32 +176,29 @@ a {
 }
 
 .modal__label {
-  color: #000;
-  font-family: "Hepta Slab";
-  font-size: 0.875rem;
-  font-style: normal;
-  font-weight: 400;
-  line-height: normal;
-  letter-spacing: 0.10938rem;
+  color: var(--color-black-primary);
+  font-family: var(--font-heading-2);
+  font-size: var(--font-size-semi-small);
+  font-weight: var(--font-weight-normal);
   text-transform: uppercase;
 }
 
 .modal__input {
-  border-radius: 0.1875rem;
-  width: 1.3125rem;
-  height: 1.3125rem;
+  border-radius: 0.2rem;
+  width: 1.25rem;
+  height: 1.25rem;
 }
 
 .modal__input:checked {
-  accent-color: black;
+  accent-color: var(--color-black-primary);
 }
 
 input:required {
-  border: 2px solid red;
+  border: 2px solid var(--color-orange-border);
 }
 
 .modal__input:invalid {
-  border: 2px solid #e02318;
+  border: 2px solid var(--color-orange-border);
 }
 
 .modal__button {
@@ -209,22 +208,18 @@ input:required {
   background-size: contain;
 
   width: 10rem;
-  height: 3.4375rem;
+  height: 3.5rem;
 
   background-color: inherit;
   border: none;
 
-  color: #000;
-  text-align: center;
-  font-family: "Bebas Neue";
-  font-size: 1.3125rem;
-  font-style: normal;
-  font-weight: 400;
-  line-height: normal;
-  letter-spacing: 0.15444rem;
+  color: var(--color-black-primary);
+  font-family: var(--font-heading-1);
+  font-size: var(--font-size-semi-large);
+  font-weight: var(--font-weight-normal);
   text-transform: uppercase;
-  text-align: left;
   padding-left: 1.5rem;
+  text-align: left;
 }
 
 /* Hero */
