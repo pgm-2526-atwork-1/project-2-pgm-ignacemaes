@@ -16,7 +16,7 @@ https://pgm-2526-atwork-1.github.io/project-2-pgm-ignacemaes/
 - [x] create the header and footer layout
 
 - [x] create modal layout and add basic styling
-- [ ] finish navbar
+- [x] finish navbar
 
 ### Nice-to-haves
 
