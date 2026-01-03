@@ -222,67 +222,6 @@ input:required {
   text-align: left;
 }
 
-/* Hero */
-.hero {
-  height: 48rem;
-  position: relative;
-}
-
-.hero__background {
-  width: 100%;
-
-  position: absolute;
-  z-index: -1;
-  left: 0;
-  top: 0;
-}
-
-.hero__background video {
-  width: 100%;
-  height: 100vh;
-  object-fit: cover;
-}
-
-.hero__info {
-  display: inline-flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 3.75rem;
-
-  position: absolute;
-  top: calc(50% - 186px);
-  left: calc(50% - 115px);
-}
-
-.info__item {
-  text-align: center;
-  color: var(--color-white-primary);
-}
-
-.info__heading {
-  color: var(--color-white-primary);
-  -webkit-text-stroke-width: 0.25px;
-  -webkit-text-stroke-color: var(--color-black-primary);
-  font-family: var(--font-heading-2);
-  font-size: var(--font-size-normal);
-  font-weight: var(--font-weight-normal);
-  text-transform: uppercase;
-}
-
-.info__text {
-  color: var(--color-white-primary);
-  -webkit-text-stroke-width: 1px;
-  -webkit-text-stroke-color: var(--color-black-primary);
-  font-family: var(--font-heading-1);
-  font-size: 1.75rem;
-  font-style: normal;
-  font-weight: 400;
-  line-height: normal;
-  letter-spacing: 0.38888rem;
-  text-transform: uppercase;
-}
-
 /* Footer */
 footer {
   background-color: var(--color-orange-primary);
@@ -558,18 +497,6 @@ footer {
   /* Modal */
   .modal__form {
     flex-direction: row;
-  }
-
-  /* Hero */
-  .hero__info {
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    gap: 10rem;
-
-    position: absolute;
-    top: calc(50% - 64px);
-    left: calc(50% - 401px);
   }
 
   /* Footer */
