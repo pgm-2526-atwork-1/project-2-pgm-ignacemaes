@@ -41,7 +41,7 @@ header {
   gap: 0.25rem;
 
   z-index: 1;
-  position: fixed;
+  position: absolute;
   left: 0;
   right: 0;
   top: 0;
@@ -194,7 +194,8 @@ nav {
 }
 
 .header__copyright--active {
-  padding-top: 1.5rem;
+  padding-top: 1rem;
+  padding-bottom: 0.5rem;
 
   display: flex;
   flex-direction: column;
@@ -203,7 +204,7 @@ nav {
   gap: 0.25rem;
 }
 
-.header__copyright > .copyright__link {
+.header__copyright .copyright__link {
   color: var(--color-white);
   font-family: var(--font-family-1);
   font-weight: var(--font-weight-2);
@@ -214,6 +215,10 @@ nav {
 
 @media (min-width: 48rem) {
   /* Header */
+  header {
+    background-color: transparent;
+  }
+
   .top__text {
     flex-direction: row;
     align-items: center;
