@@ -222,6 +222,56 @@ input:required {
   text-align: left;
 }
 
+/* Main */
+.main__beers {
+  display: flex;
+  flex-direction: column;
+}
+
+.beers__list {
+  display: none;
+}
+
+.beers__carousel {
+  background-color: black;
+
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.beers__carousel img {
+  padding: 2.5rem 0;
+  padding-left: 1rem;
+  width: 100%;
+}
+
+.beers__grid {
+  display: grid;
+  grid-auto-rows: 22.5rem;
+  width: 100%;
+}
+
+.beers__gridItem {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-shrink: 0;
+  gap: 1.25rem;
+}
+
+.beers__gridItem--small {
+  background-color: grey;
+  grid-column: span 1;
+  grid-row: span 1;
+}
+
+.beers__gridItem--big {
+  background-color: darkgray;
+  grid-column: span 1;
+  grid-row: span 2;
+}
+
 /* Footer */
 footer {
   background-color: var(--color-orange-primary);
@@ -497,6 +547,57 @@ footer {
   /* Modal */
   .modal__form {
     flex-direction: row;
+  }
+
+  /* Main */
+  .main__beers {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .beers__carousel {
+    display: none;
+  }
+
+  .beers__list {
+    display: flex;
+    flex-direction: column;
+    height: 202.5rem;
+    width: 100%;
+  }
+
+  .beers__item {
+    padding: 2rem 1rem;
+    height: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .beers__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  .beers__link {
+    color: #e2231a;
+    font-family: "Bebas Neue";
+    font-size: 1.3125rem;
+    line-height: normal;
+    font-weight: 400;
+  }
+
+  .beers__link:hover {
+    text-decoration: underline;
+    text-decoration-thickness: 2px;
+  }
+
+  .beers__gridItem--big {
+    grid-column: span 2;
   }
 
   /* Footer */
