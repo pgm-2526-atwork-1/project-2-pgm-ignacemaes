@@ -233,7 +233,7 @@ input:required {
 }
 
 .beers__carousel {
-  background-color: black;
+  background-color: var(--color-black-primary);
 
   display: flex;
   justify-content: flex-end;
@@ -584,8 +584,8 @@ footer {
   }
 
   .beers__link {
-    color: #e2231a;
-    font-family: "Bebas Neue";
+    color: var(--color-orange-primary);
+    font-family: var(--font-heading-1);
     font-size: 1.3125rem;
     line-height: normal;
     font-weight: 400;

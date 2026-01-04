@@ -18,7 +18,7 @@ https://pgm-2526-atwork-1.github.io/project-2-pgm-ignacemaes/
 - [x] create modal layout and add basic styling
 - [x] finish navbar
 - [x] adjust hero layout and styling
-- [ ] create homepage layout
+- [x] create homepage layout
 
 ### Nice-to-haves
 
