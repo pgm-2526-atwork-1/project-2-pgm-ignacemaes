@@ -118,7 +118,7 @@
   width: 100%;
 }
 
-@media (min-width: 48rem) {
+@media (min-width: 64rem) {
   .hero__content {
     top: 50%;
 

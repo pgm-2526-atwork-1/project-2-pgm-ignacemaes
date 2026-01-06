@@ -213,7 +213,7 @@ nav {
   line-height: normal;
 }
 
-@media (min-width: 48rem) {
+@media (min-width: 64rem) {
   /* Header */
   header {
     background-color: transparent;
