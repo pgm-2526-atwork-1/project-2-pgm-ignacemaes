@@ -249,7 +249,6 @@ input:required {
 .beers__grid {
   display: grid;
   grid-auto-columns: 100%;
-  grid-auto-rows: 22.5rem;
   width: 100%;
 }
 
@@ -279,7 +278,10 @@ input:required {
   grid-row: span 2;
 }
 
-.gridItem__background,
+.gridItem__background {
+  height: 100%;
+  width: 100%;
+}
 .gridItem__background img {
   object-fit: cover;
   object-position: top;
