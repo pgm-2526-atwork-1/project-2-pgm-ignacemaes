@@ -19,6 +19,9 @@ https://pgm-2526-atwork-1.github.io/project-2-pgm-ignacemaes/
 - [x] finish navbar
 - [x] adjust hero layout and styling
 - [x] create homepage layout
+- [ ] fetch data with javascript
+- [ ] finish bieren.html layout and styling
+- [ ] create modal logic
 
 ### Nice-to-haves
 
