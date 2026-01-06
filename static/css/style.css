@@ -560,6 +560,10 @@ footer {
   gap: 2rem;
 }
 
+.socials path {
+  fill: var(--color-black-primary);
+}
+
 @media (min-width: 64rem) {
   /* Modal */
   .modal__form {
