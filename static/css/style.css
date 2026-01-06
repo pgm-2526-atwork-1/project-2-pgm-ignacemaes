@@ -248,11 +248,14 @@ input:required {
 
 .beers__grid {
   display: grid;
+  grid-auto-columns: 100%;
   grid-auto-rows: 22.5rem;
   width: 100%;
 }
 
 .beers__gridItem {
+  background-color: var(--color-orange-primary);
+
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -261,15 +264,27 @@ input:required {
 }
 
 .beers__gridItem--small {
-  background-color: grey;
   grid-column: span 1;
   grid-row: span 1;
 }
 
+.beers__gridItem--long {
+  grid-column: span 2;
+  grid-row: span 1;
+}
+
+.beers__gridItem--long,
 .beers__gridItem--big {
-  background-color: darkgray;
   grid-column: span 1;
   grid-row: span 2;
+}
+
+.gridItem__background,
+.gridItem__background img {
+  object-fit: cover;
+  object-position: top;
+  height: 100%;
+  width: 100%;
 }
 
 /* Footer */
@@ -574,6 +589,10 @@ footer {
     align-items: center;
   }
 
+  .beers__grid {
+    grid-auto-columns: 50%;
+  }
+
   .beers__content {
     display: flex;
     flex-direction: column;
@@ -631,6 +650,11 @@ footer {
   .beers__link:hover {
     text-decoration: underline;
     text-decoration-thickness: 2px;
+  }
+
+  .beers__gridItem--long {
+    grid-column: span 2;
+    grid-row: span 1 rem;
   }
 
   .beers__gridItem--big {
