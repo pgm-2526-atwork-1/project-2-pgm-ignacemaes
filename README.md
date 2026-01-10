@@ -21,7 +21,7 @@ https://pgm-2526-atwork-1.github.io/project-2-pgm-ignacemaes/
 - [x] create homepage layout
 - [x] fetch data with javascript
 - [x] finish bieren.html layout and styling
-- [ ] create modal logic
+- [x] create modal logic
 
 ### Nice-to-haves
 
