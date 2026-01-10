@@ -284,7 +284,7 @@ nav {
     color: var(--color-black);
   }
 
-  .primary__link:hover {
+  .primary__item--active .primary__link {
     text-decoration: underline;
     text-decoration-thickness: 2px;
   }
