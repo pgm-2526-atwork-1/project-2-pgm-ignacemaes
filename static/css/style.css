@@ -229,6 +229,16 @@ input:required {
 }
 
 .beers__list {
+  padding: 1rem;
+  height: auto;
+  width: 100%;
+
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.beers__list--home {
   display: none;
 }
 
@@ -580,10 +590,13 @@ footer {
     display: none;
   }
 
-  .beers__list {
+  .beers__list--home {
     display: flex;
     flex-direction: column;
-    height: 202.5rem;
+    gap: 0;
+
+    padding: 0;
+    height: auto;
     width: 100%;
   }
 
@@ -604,7 +617,7 @@ footer {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 1rem;
+    gap: 0.5rem;
 
     position: relative;
   }
