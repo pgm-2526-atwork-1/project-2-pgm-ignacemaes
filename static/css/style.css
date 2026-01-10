@@ -299,6 +299,29 @@ input:required {
   width: 100%;
 }
 
+.photos {
+  max-width: var(--container-width-large);
+  padding: var(--padding-container);
+  margin: var(--margin-container);
+
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  width: 100%;
+}
+
+.photo {
+  grid-row: span 1;
+  grid-column: span 1;
+  aspect-ratio: 1/1;
+}
+
+.photo img {
+  object-fit: cover;
+  object-position: center;
+  height: 100%;
+  width: 100%;
+}
+
 /* Footer */
 footer {
   background-color: var(--color-orange-primary);
@@ -678,6 +701,10 @@ footer {
 
   .beers__gridItem--big {
     grid-column: span 2;
+  }
+
+  .photos {
+    grid-template-columns: repeat(3, 1fr);
   }
 
   /* Footer */
