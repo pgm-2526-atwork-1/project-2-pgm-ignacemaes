@@ -18,10 +18,16 @@
   function generateEventHTML(event) {
     return `
     <li class="event">
+    <div class="date">
+    <p class="date__month">${event.date_month}</p>
+    <p class="date__day">${event.date_day_number}</p>
+    </div>
+    <div class="event__content">
     <h2 class="event__sub-title">${event.subtitle}</h2>
     <h3 class="event__main-title">${event.title}</h3>
     <h4 class="event__event-date">${event.date_day} ${event.date_day_number} ${event.date_month} / <span>${event.time_start} - ${event.time_end}</span></h4>
-    <a href="${event.link_url}">${event.link_title}</a>
+    </div>
+    <a class="event__link" href="${event.link_url}">${event.link_title}</a>
     </li>
     `;
   }
