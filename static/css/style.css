@@ -11,28 +11,22 @@
 
   /* Font size */
   --font-size-normal: 1rem;
-
   --font-size-semi-small: 0.85rem;
   --font-size-small: 0.7rem;
-
   --font-size-semi-large: 1.5rem;
   --font-size-large: 2rem;
-
   --font-size-xl: 3rem;
   --font-size-xxl: 4rem;
   --font-size-xxxl: 10rem;
-
   --font-size-giant: 35rem;
 
   /* Colors */
   --color-orange-primary: #e2231a;
   --color-orange-border: #bf1f17;
   --color-orange-dark: #9c1612;
-
   --color-white-primary: #ffffff;
   --color-white-antique: #f5f4f0;
   --color-white-ivory: #ebe8dd;
-
   --color-black-primary: #000000;
   --color-black-transparent: #00000091;
 
@@ -75,13 +69,16 @@ a {
 
 /* Modal */
 .overlay {
-  background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.8) 79.3%);
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.75) 0%);
   height: 100vh;
   width: 100vw;
 
   display: flex;
   justify-content: center;
   align-items: center;
+
+  position: fixed;
+  z-index: 99;
 }
 
 .modal {
@@ -91,6 +88,8 @@ a {
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
+
+  z-index: 99;
 }
 
 .modal__content {
