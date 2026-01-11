@@ -93,7 +93,7 @@ header {
 }
 
 /* Navigation */
-nav {
+.nav {
   display: flex;
   flex-direction: column;
 }
@@ -240,7 +240,7 @@ nav {
   }
 
   /* Navigation */
-  nav {
+  .nav {
     flex-direction: row;
     gap: 0.25rem;
   }

@@ -881,7 +881,7 @@ footer {
     display: block;
     background-color: var(--color-white-primary);
     width: 8rem;
-    height: 8rem;
+    height: 7rem;
 
     text-align: center;
     font-family: var(--font-heading-1);
