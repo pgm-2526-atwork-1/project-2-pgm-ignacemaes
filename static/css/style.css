@@ -47,6 +47,10 @@ body {
   font-family: var(--font-primary);
 }
 
+.body--static {
+  overflow: hidden;
+}
+
 ul {
   list-style-type: none;
   padding: 0;
@@ -775,6 +779,10 @@ footer {
 }
 
 @media (min-width: 64rem) {
+  .body--static {
+    overflow: scroll;
+  }
+
   /* Modal */
   .modal__form {
     flex-direction: row;

@@ -2,20 +2,20 @@
   --container-width: 75rem;
   --container-margin: 0 auto;
 
-  --font-family-1: Cabin;
-  --font-family-2: "Bebas Neue";
+  --nav-family-1: Cabin;
+  --nav-family-2: "Bebas Neue";
 
-  --font-size-1: 1rem;
-  --font-size-2: 0.75rem;
-  --font-size-3: 1.125rem;
-  --font-size-4: 0.875rem;
+  --nav-size-1: 1rem;
+  --nav-size-2: 0.75rem;
+  --nav-size-3: 1.125rem;
+  --nav-size-4: 0.875rem;
 
-  --font-weight-1: 400;
-  --font-weight-2: 700;
+  --nav-weight-1: 400;
+  --nav-weight-2: 700;
 
-  --color-white: #fff;
-  --color-black: #000;
-  --color-orange: #e2231a;
+  --nav-white: #fff;
+  --nav-black: #000;
+  --nav-orange: #e2231a;
 }
 
 /* Generic */
@@ -31,7 +31,7 @@ a {
 
 /* Header */
 header {
-  background-color: var(--color-black);
+  background-color: var(--nav-black);
   padding: 0.5rem 0.5rem 0 0.5rem;
   max-width: var(--container-width);
   margin: var(--container-margin);
@@ -54,11 +54,11 @@ header {
 }
 
 .top__text {
-  color: var(--color-white);
+  color: var(--nav-white);
 
-  font-family: var(--font-family-1);
-  font-weight: var(--font-weight-2);
-  font-size: var(--font-size-2);
+  font-family: var(--nav-family-1);
+  font-weight: var(--nav-weight-2);
+  font-size: var(--nav-size-2);
 
   display: flex;
   flex-direction: column;
@@ -66,7 +66,7 @@ header {
 }
 
 .top__text > span {
-  font-weight: var(--font-weight-1);
+  font-weight: var(--nav-weight-1);
 }
 
 .top__text > a {
@@ -74,7 +74,7 @@ header {
 }
 
 .top__button {
-  background-color: var(--color-white);
+  background-color: var(--nav-white);
   padding: 0.5rem;
   border: none;
 
@@ -85,10 +85,10 @@ header {
 }
 
 .button__text {
-  color: var(--color-black);
-  font-family: var(--font-family-2);
-  font-weight: var(--font-weight-1);
-  font-size: var(--font-size-1);
+  color: var(--nav-black);
+  font-family: var(--nav-family-2);
+  font-weight: var(--nav-weight-1);
+  font-size: var(--nav-size-1);
   text-transform: uppercase;
 }
 
@@ -98,8 +98,15 @@ header {
   flex-direction: column;
 }
 
+.nav--active {
+  overflow: scroll;
+  padding-bottom: 3.5rem;
+  height: 100vh;
+}
+
 .nav__logo {
-  background-color: var(--color-white);
+  background-color: var(--nav-white);
+  padding: 1.65rem;
   height: 7.5rem;
 
   display: flex;
@@ -111,12 +118,12 @@ header {
   display: none;
 }
 
-.nav__primary--active {
+.nav--active .nav__primary {
   display: flex;
   flex-direction: column;
   gap: 1.5rem;
 
-  border: 1px solid var(--color-white);
+  border: 1px solid var(--nav-white);
   padding: 1rem 0.5rem;
 }
 
@@ -129,15 +136,24 @@ header {
 }
 
 .primary__link {
-  color: var(--color-orange);
-  font-family: var(--font-family-2);
-  font-weight: var(--font-weight-1);
-  font-size: var(--font-size-3);
+  color: var(--nav-orange);
+  font-family: var(--nav-family-2);
+  font-weight: var(--nav-weight-1);
+  font-size: var(--nav-size-3);
   text-transform: uppercase;
   line-height: normal;
 }
 
+.primary__item--active .primary__link {
+  text-decoration: underline;
+  text-decoration-thickness: 2px;
+}
+
 .nav__secondary {
+  display: none;
+}
+
+.nav--active .nav__secondary {
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
@@ -146,10 +162,10 @@ header {
 }
 
 .secondary__link {
-  color: var(--color-white);
-  font-family: var(--font-family-1);
-  font-weight: var(--font-weight-2);
-  font-size: var(--font-size-4);
+  color: var(--nav-white);
+  font-family: var(--nav-family-1);
+  font-weight: var(--nav-weight-2);
+  font-size: var(--nav-size-4);
   text-transform: uppercase;
   line-height: normal;
 }
@@ -158,14 +174,14 @@ header {
   display: none;
 }
 
-.nav__tertiary--active {
+.nav--active .nav__tertiary {
   display: flex;
   align-items: center;
   width: 100%;
 }
 
 .tertiary__item {
-  border: 1px solid var(--color-white);
+  border: 1px solid var(--nav-white);
   border-top: none;
   height: 4.5rem;
   width: 100%;
@@ -180,10 +196,10 @@ header {
 }
 
 .tertiary__link {
-  color: var(--color-white);
-  font-family: var(--font-family-1);
-  font-weight: var(--font-weight-2);
-  font-size: var(--font-size-4);
+  color: var(--nav-white);
+  font-family: var(--nav-family-1);
+  font-weight: var(--nav-weight-2);
+  font-size: var(--nav-size-4);
   text-transform: uppercase;
   line-height: normal;
 }
@@ -193,7 +209,7 @@ header {
   display: none;
 }
 
-.header__copyright--active {
+.nav--active .header__copyright {
   padding-top: 1rem;
   padding-bottom: 0.5rem;
 
@@ -205,10 +221,10 @@ header {
 }
 
 .header__copyright .copyright__link {
-  color: var(--color-white);
-  font-family: var(--font-family-1);
-  font-weight: var(--font-weight-2);
-  font-size: var(--font-size-2);
+  color: var(--nav-white);
+  font-family: var(--nav-family-1);
+  font-weight: var(--nav-weight-2);
+  font-size: var(--nav-size-2);
   text-transform: uppercase;
   line-height: normal;
 }
@@ -225,7 +241,7 @@ header {
   }
 
   .top__text > span {
-    font-weight: var(--font-weight-2);
+    font-weight: var(--nav-weight-2);
   }
 
   .top__text > a {
@@ -245,6 +261,11 @@ header {
     gap: 0.25rem;
   }
 
+  .nav--active {
+    overflow: hidden;
+    height: 100%;
+  }
+
   .nav__logo {
     max-width: 16.5rem;
     padding: 0 1rem;
@@ -262,7 +283,7 @@ header {
     width: 100%;
   }
 
-  .nav__primary--active {
+  .nav--active .nav__primary {
     flex-direction: row;
     gap: 0.25rem;
 
@@ -271,7 +292,7 @@ header {
   }
 
   .primary__item {
-    background-color: var(--color-white);
+    background-color: var(--nav-white);
     height: 5rem;
     width: 100%;
 
@@ -281,20 +302,21 @@ header {
   }
 
   .primary__link {
-    color: var(--color-black);
+    color: var(--nav-black);
   }
 
-  .primary__item--active .primary__link {
+  .primary__link:hover {
     text-decoration: underline;
     text-decoration-thickness: 2px;
   }
 
-  .nav__secondary {
+  .nav__secondary,
+  .nav--active .nav__secondary {
     display: none;
   }
 
   .primary__item--active > .nav__secondary {
-    background-color: var(--color-white);
+    background-color: var(--nav-white);
     padding-left: 0;
 
     display: flex;
@@ -311,7 +333,7 @@ header {
   }
 
   .secondary__link {
-    color: var(--color-black);
+    color: var(--nav-black);
   }
 
   .secondary__link:hover,
@@ -320,11 +342,11 @@ header {
     text-decoration-thickness: 2px;
   }
 
-  .nav__tertiary--active {
+  .nav--active .nav__tertiary {
     display: none;
   }
 
-  .header__copyright--active {
+  .nav--active .header__copyright {
     display: none;
   }
 }
