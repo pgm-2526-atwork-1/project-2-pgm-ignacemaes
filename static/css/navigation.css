@@ -100,8 +100,7 @@ header {
 
 .nav--active {
   overflow: scroll;
-  padding-bottom: 3.5rem;
-  height: 100vh;
+  height: calc(100vh - 3.25rem);
 }
 
 .nav__logo {
@@ -168,6 +167,12 @@ header {
   font-size: var(--nav-size-4);
   text-transform: uppercase;
   line-height: normal;
+}
+
+.secondary__link:hover,
+.secondary__link--active {
+  text-decoration: underline;
+  text-decoration-thickness: 2px;
 }
 
 .nav__tertiary {
@@ -334,12 +339,6 @@ header {
 
   .secondary__link {
     color: var(--nav-black);
-  }
-
-  .secondary__link:hover,
-  .secondary__link--active {
-    text-decoration: underline;
-    text-decoration-thickness: 2px;
   }
 
   .nav--active .nav__tertiary {
