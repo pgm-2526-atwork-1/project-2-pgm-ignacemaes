@@ -47,7 +47,7 @@ header {
   top: 0;
 }
 
-.header--static {
+.body--static header {
   background-color: var(--nav-orange);
 }
 
@@ -67,6 +67,10 @@ header {
   display: flex;
   flex-direction: column;
   gap: 0.25rem;
+}
+
+.body--static .top__text {
+  color: var(--nav-orange);
 }
 
 .top__text > span {
@@ -254,13 +258,17 @@ header {
 
 @media (min-width: 64rem) {
   /* Header */
-  .header--static {
+  .body--static header {
     background-color: transparent;
   }
 
   .top__text {
     flex-direction: row;
     align-items: center;
+  }
+
+  .body--static .top__text {
+    color: var(--nav-white);
   }
 
   .top__text > span {
