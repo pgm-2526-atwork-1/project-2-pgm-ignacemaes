@@ -1,5 +1,7 @@
 (() => {
   const body = document.querySelector("body");
+  const header = document.querySelector("header");
+
   const $nav = document.querySelector(".nav");
   const $navButton = document.querySelector(".top__button");
   const $primaryItems = document.querySelectorAll(".primary__item");
@@ -16,11 +18,13 @@
     if (menuStatus === "closed") {
       menuStatus = "open";
       body.classList.add("body--static");
+      header.classList.add("header--static");
       $nav.classList.add("nav--active");
       generateMenuButtonHTML();
     } else {
       menuStatus = "closed";
       body.classList.remove("body--static");
+      header.classList.remove("header--static");
       $nav.classList.remove("nav--active");
       generateMenuButtonHTML();
     }
