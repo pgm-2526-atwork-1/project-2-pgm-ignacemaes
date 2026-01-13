@@ -574,6 +574,7 @@ footer {
 
 .menu__link:hover {
   text-decoration: underline;
+  text-decoration-thickness: 2px;
 }
 
 .address {
@@ -649,6 +650,7 @@ footer {
 
 .adress__cta a:hover {
   text-decoration: underline;
+  text-decoration-thickness: 2px;
 }
 
 .form {
@@ -692,6 +694,7 @@ footer {
 
 .form__button:hover {
   text-decoration: underline;
+  text-decoration-thickness: 2px;
 }
 
 .pages {
@@ -739,6 +742,7 @@ footer {
 
 .page__links a:hover {
   text-decoration: underline;
+  text-decoration-thickness: 2px;
 }
 
 .copyright {
