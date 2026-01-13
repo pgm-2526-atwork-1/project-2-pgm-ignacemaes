@@ -376,6 +376,7 @@ main {
   max-width: var(--container-width-large);
   padding: var(--padding-container);
   margin: var(--margin-container);
+  padding-bottom: 6rem;
 
   display: grid;
   grid-template-columns: repeat(2, 1fr);
