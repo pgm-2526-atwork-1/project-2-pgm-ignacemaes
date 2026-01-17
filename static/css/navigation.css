@@ -1,21 +1,8 @@
 :root {
-  --container-width: 75rem;
-  --container-margin: 0 auto;
-
-  --nav-family-1: Cabin;
-  --nav-family-2: "Bebas Neue";
-
   --nav-size-1: 1rem;
   --nav-size-2: 0.75rem;
   --nav-size-3: 1.125rem;
   --nav-size-4: 0.875rem;
-
-  --nav-weight-1: 400;
-  --nav-weight-2: 700;
-
-  --nav-white: #fff;
-  --nav-black: #000;
-  --nav-orange: #e2231a;
 }
 
 /* Generic */
@@ -33,8 +20,8 @@ a {
 header {
   background-color: transparent;
   padding: 0.5rem 0.5rem 0 0.5rem;
-  max-width: var(--container-width);
-  margin: var(--container-margin);
+  max-width: var(--container-width-large);
+  margin: var(--margin-container);
 
   display: flex;
   flex-direction: column;
@@ -48,7 +35,7 @@ header {
 }
 
 .body--static header {
-  background-color: var(--nav-orange);
+  background-color: var(--color-orange-primary);
 }
 
 /* Top */
@@ -58,10 +45,10 @@ header {
 }
 
 .top__text {
-  color: var(--nav-white);
+  color: var(--color-white-primary);
 
-  font-family: var(--nav-family-1);
-  font-weight: var(--nav-weight-2);
+  font-family: var(--font-primary);
+  font-weight: var(--font-weight-bold);
   font-size: var(--nav-size-2);
 
   display: flex;
@@ -70,11 +57,11 @@ header {
 }
 
 .body--static .top__text {
-  color: var(--nav-orange);
+  color: var(--color-orange-primary);
 }
 
 .top__text > span {
-  font-weight: var(--nav-weight-1);
+  font-weight: var(--font-weight-normal);
 }
 
 .top__text > a {
@@ -82,7 +69,7 @@ header {
 }
 
 .top__button {
-  background-color: var(--nav-white);
+  background-color: var(--color-white-primary);
   padding: 0.5rem;
   border: none;
 
@@ -93,9 +80,9 @@ header {
 }
 
 .button__text {
-  color: var(--nav-black);
-  font-family: var(--nav-family-2);
-  font-weight: var(--nav-weight-1);
+  color: var(--color-black-primary);
+  font-family: var(--font-heading-1);
+  font-weight: var(--font-weight-normal);
   font-size: var(--nav-size-1);
   text-transform: uppercase;
 }
@@ -108,12 +95,12 @@ header {
 
 .nav--active {
   overflow: scroll;
-  height: calc(100vh - 3.25rem);
-  background-color: var(--nav-black);
+  height: calc(100vh - 3rem);
+  background-color: var(--color-black-primary);
 }
 
 .nav__logo {
-  background-color: var(--nav-white);
+  background-color: var(--color-white-primary);
   padding: 1.65rem;
   height: 7.5rem;
 
@@ -123,13 +110,13 @@ header {
 }
 
 .nav--active .nav__logo {
-  background-color: var(--nav-orange);
-  border: 1px solid var(--nav-white);
+  background-color: var(--color-orange-primary);
+  border: 1px solid var(--color-white-primary);
   border-bottom: none;
 }
 
 .nav--active .nav__logo path {
-  fill: var(--nav-white);
+  fill: var(--color-white-primary);
 }
 
 .nav__primary {
@@ -141,7 +128,7 @@ header {
   flex-direction: column;
   gap: 1.5rem;
 
-  border: 1px solid var(--nav-white);
+  border: 1px solid var(--color-white-primary);
   padding: 1rem 0.5rem;
 }
 
@@ -154,9 +141,9 @@ header {
 }
 
 .primary__link {
-  color: var(--nav-orange);
-  font-family: var(--nav-family-2);
-  font-weight: var(--nav-weight-1);
+  color: var(--color-orange-primary);
+  font-family: var(--font-heading-1);
+  font-weight: var(--font-weight-normal);
   font-size: var(--nav-size-3);
   text-transform: uppercase;
   line-height: normal;
@@ -180,9 +167,9 @@ header {
 }
 
 .secondary__link {
-  color: var(--nav-white);
-  font-family: var(--nav-family-1);
-  font-weight: var(--nav-weight-2);
+  color: var(--color-white-primary);
+  font-family: var(--font-primary);
+  font-weight: var(--font-weight-bold);
   font-size: var(--nav-size-4);
   text-transform: uppercase;
   line-height: normal;
@@ -205,7 +192,7 @@ header {
 }
 
 .tertiary__item {
-  border: 1px solid var(--nav-white);
+  border: 1px solid var(--color-white-primary);
   border-top: none;
   height: 4.5rem;
   width: 100%;
@@ -220,9 +207,9 @@ header {
 }
 
 .tertiary__link {
-  color: var(--nav-white);
-  font-family: var(--nav-family-1);
-  font-weight: var(--nav-weight-2);
+  color: var(--color-white-primary);
+  font-family: var(--font-primary);
+  font-weight: var(--font-weight-bold);
   font-size: var(--nav-size-4);
   text-transform: uppercase;
   line-height: normal;
@@ -243,14 +230,14 @@ header {
   align-items: center;
   gap: 0.25rem;
 
-  border-left: 1px solid var(--nav-white);
-  border-right: 1px solid var(--nav-white);
+  border-left: 1px solid var(--color-white-primary);
+  border-right: 1px solid var(--color-white-primary);
 }
 
 .header__copyright .copyright__link {
-  color: var(--nav-white);
-  font-family: var(--nav-family-1);
-  font-weight: var(--nav-weight-2);
+  color: var(--color-white-primary);
+  font-family: var(--font-primary);
+  font-weight: var(--font-weight-bold);
   font-size: var(--nav-size-2);
   text-transform: uppercase;
   line-height: normal;
@@ -268,11 +255,11 @@ header {
   }
 
   .body--static .top__text {
-    color: var(--nav-white);
+    color: var(--color-white-primary);
   }
 
   .top__text > span {
-    font-weight: var(--nav-weight-2);
+    font-weight: var(--font-weight-bold);
   }
 
   .top__text > a {
@@ -305,12 +292,12 @@ header {
   }
 
   .nav--active .nav__logo {
-    background-color: var(--nav-white);
+    background-color: var(--color-white-primary);
     border: none;
   }
 
   .nav--active .nav__logo path {
-    fill: var(--nav-orange);
+    fill: var(--color-orange-primary);
   }
 
   .nav__primary {
@@ -320,7 +307,7 @@ header {
     grid-template-columns: repeat(4, 1fr);
     gap: 0.25rem;
 
-    height: 5rem;
+    height: 6rem;
     width: 100%;
   }
 
@@ -333,8 +320,8 @@ header {
   }
 
   .primary__item {
-    background-color: var(--nav-white);
-    height: 5rem;
+    background-color: var(--color-white-primary);
+    height: 6rem;
     width: 100%;
 
     display: flex;
@@ -343,7 +330,7 @@ header {
   }
 
   .primary__link {
-    color: var(--nav-black);
+    color: var(--color-black-primary);
   }
 
   .primary__link:hover {
@@ -357,7 +344,7 @@ header {
   }
 
   .primary__item--active > .nav__secondary {
-    background-color: var(--nav-white);
+    background-color: var(--color-white-primary);
     padding-left: 0;
 
     display: flex;
@@ -365,16 +352,16 @@ header {
     justify-content: space-evenly;
     align-items: center;
 
-    height: 3.75rem;
+    height: 2.75rem;
     width: 100%;
 
     position: absolute;
-    bottom: -4rem;
+    bottom: -3rem;
     left: 0;
   }
 
   .secondary__link {
-    color: var(--nav-black);
+    color: var(--color-black-primary);
   }
 
   .nav--active .nav__tertiary {

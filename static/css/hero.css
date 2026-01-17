@@ -1,30 +1,103 @@
-:root {
-  --hero-height: 45rem;
-
-  --hero-family-1: "Hepta Slab";
-  --hero-family-2: "Bebas Neue";
-  --hero-family-3: Cabin;
-
-  --hero-size-1: 1rem;
-  --hero-size-2: 0.75rem;
-  --hero-size-3: 1.125rem;
-  --hero-size-4: 0.875rem;
-  --hero-size-5: 1.75rem;
-
-  --hero-weight-1: 400;
-  --hero-weight-2: 700;
-
-  --hero-white: #fff;
-  --hero-black: #000;
-  --hero-orange: #e2231a;
-}
-
 .hero {
-  background-color: var(--hero-orange);
-  height: var(--hero-height);
+  background-color: var(--color-orange-primary);
+  height: var(--container-width-normal);
   width: 100%;
 
   position: relative;
+}
+
+.hero--details {
+  height: 100%;
+  padding: var(--padding-container);
+  padding-top: 10rem;
+}
+
+.hero__introduction {
+  max-width: calc(var(--container-width-large) - 1rem);
+  margin: var(--margin-container);
+
+  border: 1px solid var(--color-white-primary);
+  border-bottom: none;
+  border-top: none;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+.introduction__title {
+  width: 100vw;
+  max-height: var(--font-size-giant);
+  aspect-ratio: 24/9;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background-image: url(../images/backgrounds/hero/BOLLEKE.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+
+.introduction__title h2 {
+  text-align: center;
+  font-size: var(--font-size-large);
+  font-family: var(--font-heading-2);
+  font-weight: var(--font-weight-normal);
+  text-transform: uppercase;
+
+  padding: 0 4.5rem;
+}
+
+.introduction__image {
+  width: 13.5375rem;
+  height: 22.65rem;
+}
+
+.introduction__opening {
+  color: #000;
+  text-align: center;
+  font-family: var(--font-heading-2);
+  font-size: var(--font-size-normal);
+  font-weight: 400;
+}
+
+.hero__description {
+  padding: 0.5rem 1rem;
+  max-width: calc(var(--container-width-large) - 1rem);
+  margin: var(--margin-container);
+
+  background-color: var(--color-white-primary);
+  font-family: var(--font-primary);
+
+  position: relative;
+}
+
+.hero__description h3 {
+  color: var(--color-orange-primary);
+  font-size: var(--font-size-small);
+  font-weight: var(--font-weight-bold);
+  text-transform: uppercase;
+  line-height: normal;
+
+  padding-bottom: 0.25rem;
+}
+
+.hero__description p {
+  font-size: var(--font-size-semi-small);
+  line-height: 1.25rem;
+
+  padding-bottom: 1.75rem;
+}
+
+.description__image {
+  width: calc(100% - 2rem);
+  max-width: 27.5rem;
+  position: absolute;
+  bottom: -2rem;
 }
 
 .hero__content {
@@ -65,16 +138,16 @@
 
 .hero__link {
   text-align: center;
-  color: var(--hero-white);
-  -webkit-text-stroke-color: var(--hero-black);
+  color: var(--color-white-primary);
+  -webkit-text-stroke-color: var(--color-black-primary);
   text-transform: uppercase;
 }
 
 .hero__title {
-  color: var(--hero-white);
+  color: var(--color-white-primary);
   -webkit-text-stroke-width: 2px;
   -webkit-text-stroke-color: #000;
-  font-family: "Bebas Neue";
+  font-family: var(--font-heading-1);
   font-size: 4.5rem;
   font-style: normal;
   font-weight: 400;
@@ -89,17 +162,15 @@
 
 .link__text--small {
   -webkit-text-stroke-width: 0.5px;
-  font-family: var(--hero-family-1);
-  font-weight: var(--hero-weight-1);
-  font-size: var(--hero-size-1);
+  font-family: var(--font-heading-2);
+  font-size: var(--font-size-normal);
   line-height: normal;
 }
 
 .link__text--big {
   -webkit-text-stroke-width: 1px;
-  font-family: var(--hero-family-2);
-  font-weight: var(--hero-weight-1);
-  font-size: var(--hero-size-5);
+  font-family: var(--font-heading-1);
+  font-size: var(--font-size-large);
   line-height: normal;
 }
 
@@ -114,7 +185,7 @@
 .hero__background,
 .hero__background img {
   object-fit: cover;
-  height: var(--hero-height);
+  height: 100%;
   width: 100%;
 }
 
@@ -159,19 +230,19 @@
   }
 
   .tickets__text {
-    background-color: var(--hero-white);
+    background-color: var(--color-white-primary);
     padding: 0.5rem;
-    color: var(--hero-black);
-    font-family: var(--hero-family-3);
-    font-weight: var(--hero-weight-2);
-    font-size: var(--hero-size-4);
+    color: var(--color-black-primary);
+    font-family: var(--font-primary);
+    font-weight: var(--font-weight-bold);
+    font-size: var(--font-size-semi-small);
     text-transform: uppercase;
     line-height: normal;
     padding-right: 1rem;
   }
 
   .tickets__icon {
-    background-color: var(--hero-orange);
+    background-color: var(--color-orange-primary);
     border-radius: 50%;
     aspect-ratio: 1/1;
     padding: 0.5rem;

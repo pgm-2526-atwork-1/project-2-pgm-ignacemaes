@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -6,13 +6,18 @@
     <meta name="robots" content="noindex,nofollow" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Cabin:ital,wght@0,400..700;1,400..700&family=Hepta+Slab:wght@1..900&family=Permanent+Marker&display=swap" rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Cabin:ital,wght@0,400..700;1,400..700&family=Hepta+Slab:wght@1..900&family=Permanent+Marker&display=swap"
+      rel="stylesheet" />
     <link rel="stylesheet" href="static/css/reset.css" />
+    <link rel="stylesheet" href="static/css/variables.css" />
     <link rel="stylesheet" href="static/css/style.css" />
     <link rel="stylesheet" href="static/css/navigation.css" />
+    <link rel="stylesheet" href="static/css/hero.css" />
+    <link rel="stylesheet" href="static/css/footer.css" />
     <title>Document</title>
   </head>
-  <body>
+  <body class="body--bolleke">
     <header>
       <div class="top">
         <p class="top__text">Bezoek de brouwerij vandaag<span>tot 18u - inkom voor 16u30</span><a href="#">Tickets</a></p>
@@ -148,7 +153,28 @@
       </nav>
     </header>
 
-    <main>
+    <main class="body--bolleke">
+      <div class="hero hero--details">
+        <div class="hero__introduction">
+          <img class="introduction__image" src="static/images/details/bolleke.png" alt="An image of bolleke beer with a glass." />
+          <div class="introduction__title">
+            <h2>DE SMAAK VAN ’t STAD</h2>
+          </div>
+          <p class="introduction__opening">
+            Dit is de smaak van ’t Stad. Van ruige dokken en volle terrasjes. Van bakfietsen en zomeravonden aan de Schelde. Antwerpen in een glas.
+          </p>
+        </div>
+        <div class="hero__description">
+          <h3>EEN BOLLEKE KEUNING</h3>
+          <p>
+            Zijn bolvormige glas heeft hem het koosnaampje bolleke opgeleverd. Op z’n Antwerps bestel je het als een bolleke Keuning. En omdat er in ’t Stad al
+            eens ‘gezwansd’ mag worden, hebben we nu met een knipoog Antwaarpse Pale Ale toegevoegd op het etiket.
+          </p>
+          <h3>IN ELK CAFé en op elk terras</h3>
+          <p>Naar een fris getapt bolleke hoef je in ’t Stad overigens nooit ver te zoeken. Dit Antwerpse icoon vind je in elk café en op elk terras.</p>
+          <img class="description__image" src="static/images/backgrounds/hero/bycicle.png" alt="" />
+        </div>
+      </div>
       <ul class="photos"></ul>
     </main>
 
@@ -175,7 +201,7 @@
         <ul class="address">
           <li class="address__item">
             <picture>
-              <img class="address__img" src="static/images/Background/Map.png" alt="Een kaartje met het address van de brouwerij" />
+              <img class="address__img" src="static/images/backgrounds/footer/Map.png" alt="Een kaartje met het address van de brouwerij" />
             </picture>
             <img class="address__pointer" src="static/images/Icons/Map_pointer.svg" alt="Icoontje voor het address aan te duiden." />
           </li>
