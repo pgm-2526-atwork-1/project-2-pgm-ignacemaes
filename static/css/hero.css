@@ -25,6 +25,8 @@
   justify-content: center;
   align-items: center;
   gap: 1rem;
+
+  position: relative;
 }
 
 .introduction__title {
@@ -53,8 +55,8 @@
 }
 
 .introduction__image {
-  width: 13.5375rem;
-  height: 22.65rem;
+  width: 13.5rem;
+  height: 22.5rem;
 }
 
 .introduction__opening {
@@ -63,6 +65,8 @@
   font-family: var(--font-heading-2);
   font-size: var(--font-size-normal);
   font-weight: 400;
+
+  padding-bottom: 1rem;
 }
 
 .hero__description {
@@ -94,10 +98,7 @@
 }
 
 .description__image {
-  width: calc(100% - 2rem);
-  max-width: 27.5rem;
-  position: absolute;
-  bottom: -2rem;
+  margin-bottom: -2.75rem;
 }
 
 .hero__content {
@@ -190,6 +191,53 @@
 }
 
 @media (min-width: 64rem) {
+  .introduction__title h2 {
+    font-size: var(--font-size-xl);
+    padding: 0 4.5rem;
+    width: 30rem;
+  }
+
+  .introduction__image {
+    width: 100%;
+    max-width: 25rem;
+    height: auto;
+
+    position: absolute;
+    bottom: -12.5rem;
+    left: 5rem;
+
+    z-index: 1;
+  }
+
+  .hero__description {
+    height: 25rem;
+    position: relative;
+  }
+
+  .hero__description p {
+    font-size: var(--font-size-normal);
+    line-height: 150%;
+  }
+
+  .introduction__opening,
+  .description__content {
+    padding-top: 1.5rem;
+    margin-left: auto;
+    margin-right: 5rem;
+    width: 45%;
+  }
+
+  .introduction__opening {
+    font-size: var(--font-size-semi-large);
+    line-height: 120%;
+    text-align: left;
+  }
+
+  .description__image {
+    position: absolute;
+    bottom: 0;
+  }
+
   .hero__content {
     top: 50%;
 
