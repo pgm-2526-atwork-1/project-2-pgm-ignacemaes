@@ -16,7 +16,7 @@
   max-width: calc(var(--container-width-large) - 1rem);
   margin: var(--margin-container);
 
-  border: 1px solid var(--color-white-primary);
+  border: 2px solid var(--color-white-primary);
   border-bottom: none;
   border-top: none;
 
