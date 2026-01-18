@@ -144,7 +144,7 @@ header {
   color: var(--color-orange-primary);
   font-family: var(--font-heading-1);
   font-weight: var(--font-weight-normal);
-  font-size: var(--nav-size-3);
+  font-size: var(--font-size-semi-large);
   text-transform: uppercase;
   line-height: normal;
 }
