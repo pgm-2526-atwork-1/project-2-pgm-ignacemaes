@@ -920,6 +920,11 @@ main {
     border-left: 2px solid var(--color-white-primary);
   }
 
+  .sub__item h3,
+  .sub__item p {
+    font-size: var(--font-size-normal);
+  }
+
   .photos {
     grid-template-columns: repeat(3, 1fr);
     padding-bottom: 5rem;
