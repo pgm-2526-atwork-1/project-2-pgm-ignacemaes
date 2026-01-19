@@ -257,25 +257,49 @@ main {
   display: none;
 }
 
-.image__text--tripel {
+.beers__list--home .image__text--tripel {
   transform: rotate(7deg);
   right: -6.5rem;
   top: 7rem;
 }
 
-.image__text--bolleke {
+.beers__list--home .image__text--bolleke {
   transform: rotate(-4deg);
-  left: -7.5rem;
+  left: -8rem;
   top: 13.5rem;
 }
 
-.image__text--jo {
+.beers__list--home .image__text--jo {
   transform: rotate(-15deg);
-  right: -6rem;
-  top: 7rem;
+  right: -5rem;
+  top: 7.5rem;
 }
 
-.image__text--speciallekes {
+.beers__list--home .image__text--speciallekes {
+  transform: rotate(-15deg);
+  bottom: 14rem;
+  left: -2rem;
+}
+
+.beers__list--bieren .image__text--tripel {
+  transform: rotate(7deg);
+  right: -6.5rem;
+  top: 4.5rem;
+}
+
+.beers__list--bieren .image__text--bolleke {
+  transform: rotate(-4deg);
+  left: -7.625rem;
+  top: 13.5rem;
+}
+
+.beers__list--bieren .image__text--jo {
+  transform: rotate(-15deg);
+  right: -5rem;
+  top: 5.5rem;
+}
+
+.beers__list--bieren .image__text--speciallekes {
   transform: rotate(-15deg);
   bottom: 15rem;
   left: -2rem;
@@ -763,6 +787,7 @@ main {
   .main__beers {
     display: flex;
     flex-direction: row;
+    position: relative;
   }
 
   .beers__carousel {
@@ -777,6 +802,8 @@ main {
     padding: 0;
     height: auto;
     width: 100%;
+
+    margin-top: -4rem;
   }
 
   .beers__list--bieren {
