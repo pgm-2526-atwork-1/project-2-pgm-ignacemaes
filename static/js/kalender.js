@@ -1,13 +1,27 @@
 (() => {
-  const $events = document.querySelector(".events");
+  const $eventsFeb = document.querySelector(".events--feb");
+  const $eventsMrt = document.querySelector(".events--mrt");
+  const $eventsApr = document.querySelector(".events--apr");
 
   async function loadEvents() {
     const events = await getData("https://www.pgm.gent/data/dekoninck/events.json");
-    let html = "";
+    let htmlFeb = "";
+    let htmlMrt = "";
+    let htmlApr = "";
     events.forEach((event) => {
-      html += generateEventHTML(event);
+      if (event.date_month === "Feb") {
+        htmlFeb += generateEventHTML(event);
+      }
+      if (event.date_month === "Mrt") {
+        htmlMrt += generateEventHTML(event);
+      }
+      if (event.date_month === "Apr") {
+        htmlApr += generateEventHTML(event);
+      }
     });
-    $events.innerHTML = html;
+    $eventsFeb.innerHTML = htmlFeb;
+    $eventsMrt.innerHTML = htmlMrt;
+    $eventsApr.innerHTML = htmlApr;
   }
 
   async function getData(url) {
