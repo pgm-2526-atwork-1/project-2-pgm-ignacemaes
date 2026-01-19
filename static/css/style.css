@@ -575,18 +575,19 @@ main {
 .item__button {
   background-image: url("../images/Icons/Arrow-dark.png");
   background-repeat: no-repeat;
-  height: 2.6rem;
-  width: 9rem;
+  background-size: contain;
+  height: 3rem;
+  width: 10rem;
 
   color: var(--color-white-primary);
   font-family: var(--font-heading-1);
-  font-size: var(--font-size-normal);
+  font-size: var(--font-size-semi-large);
   font-weight: var(--font-weight-normal);
   text-transform: uppercase;
 
   display: flex;
   align-items: center;
-  padding-left: 1rem;
+  padding-left: 0.75rem;
 }
 
 .photos__group {
