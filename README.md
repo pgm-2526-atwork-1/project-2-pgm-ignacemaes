@@ -22,8 +22,8 @@ https://pgm-2526-atwork-1.github.io/project-2-pgm-ignacemaes/
 - [x] fetch data with javascript
 - [x] finish bieren.html layout and styling
 - [x] create modal logic
-- [ ] finish bolleke.html
-- [ ] add titles to kalender.html
+- [x] finish bolleke.html
+- [x] add titles to kalender.html
 
 ### Nice-to-haves
 
