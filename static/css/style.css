@@ -182,6 +182,8 @@ input:required {
   text-transform: uppercase;
   padding-left: 1.5rem;
   text-align: left;
+
+  cursor: pointer;
 }
 
 /* Main */
@@ -192,6 +194,10 @@ main {
 .main__beers {
   display: flex;
   flex-direction: column;
+}
+
+.main--bolleke {
+  background-color: transparent;
 }
 
 .beers__list {
@@ -624,6 +630,10 @@ main {
   left: calc(50% - 3.75rem);
 }
 
+.bar {
+  display: none;
+}
+
 .events__group > h2 {
   display: none;
 }
@@ -918,6 +928,17 @@ main {
 
   .photos__hashtag {
     display: none;
+  }
+
+  .photos__bar {
+    display: block;
+    background-color: var(--color-black-primary);
+    height: 34rem;
+    width: 100%;
+
+    z-index: -1;
+    position: absolute;
+    bottom: 0;
   }
 
   .events__group {
