@@ -37,7 +37,7 @@
   align-items: center;
   justify-content: center;
 
-  background-image: url(../images/backgrounds/hero/BOLLEKE.png);
+  background-image: url(../images/backgrounds/hero/bolleke.png);
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
@@ -117,7 +117,7 @@
   right: 0;
   left: 0;
 
-  gap: 3.75rem;
+  gap: 3rem;
 }
 
 .hero__content--bieren {
@@ -143,6 +143,10 @@
   color: var(--color-white-primary);
   -webkit-text-stroke-color: var(--color-black-primary);
   text-transform: uppercase;
+
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
 }
 
 .hero__title {
