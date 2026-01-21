@@ -17,7 +17,6 @@
       checkboxStatus = "false";
     }
     e.currentTarget.dataset.status = checkboxStatus;
-    console.log(checkboxStatus);
   });
 
   $button.addEventListener("click", () => {
