@@ -27,9 +27,6 @@ https://pgm-2526-atwork-1.github.io/project-2-pgm-ignacemaes/
 
 ### Nice-to-haves
 
-- [ ] fix bad BEM notation
-- [x] create a variables.css and remove :root {} variables from other files
-
 - [ ] create extra beer page (wildjo.html)
 - [ ] create contact page (contact.html)
 - [ ] create a pagination (per month) for kalender.html.
