@@ -11,12 +11,13 @@
   }
 
   $checkbox.addEventListener("click", (e) => {
-    checkboxStatus = e.currentTarget.dataset.status;
-    if (checkboxStatus === "false") {
+    if (e.currentTarget.dataset.status === "false") {
       checkboxStatus = "true";
     } else {
       checkboxStatus = "false";
     }
+    e.currentTarget.dataset.status = checkboxStatus;
+    console.log(checkboxStatus);
   });
 
   $button.addEventListener("click", () => {
